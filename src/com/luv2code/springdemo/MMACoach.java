@@ -6,4 +6,9 @@ public class MMACoach implements Coach{
     public String getDailyWorkout() {
         return "Francis Ngannou got beaten by Stipe Miocic";
     }
+
+    @Override
+    public String getDailyFortune() {
+        return null;
+    }
 }
