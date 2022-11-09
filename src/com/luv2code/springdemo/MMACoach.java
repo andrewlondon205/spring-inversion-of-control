@@ -1,14 +1,15 @@
 package com.luv2code.springdemo;
 
 public class MMACoach implements Coach{
+    private FortuneService fortuneService;
 
     @Override
     public String getDailyWorkout() {
-        return "Francis Ngannou got beaten by Stipe Miocic";
+        return "Francis Ngannou does 200 push ups per day";
     }
 
     @Override
     public String getDailyFortune() {
-        return null;
+        return fortuneService.getFortune();
     }
 }
